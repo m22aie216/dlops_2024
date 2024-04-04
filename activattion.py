@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-#feature-1
 # Sigmoid Activation Function
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
@@ -15,6 +14,8 @@ def relu(x):
 def leaky_relu(x, alpha=0.01):
     return np.where(x > 0, x, alpha * x)
 
+
+#bug fix
 # Tanh Activation Function
 def tanh(x):
     return np.tanh(x)
